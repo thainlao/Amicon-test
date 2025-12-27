@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Неоновые тени */
+@layer utilities {
+  .shadow-neon-cyan {
+    box-shadow: 
+      0 0 8px #06b6d4,
+      0 0 16px #06b6d4,
+      0 0 24px #06b6d4;
+  }
+  .shadow-neon-purple {
+    box-shadow: 
+      0 0 8px #a855f7,
+      0 0 16px #a855f7,
+      0 0 24px #a855f7;
+  }
+  .shadow-neon-hover {
+    box-shadow: 
+      0 0 4px #a78bfa;
+  }
+  .drop-shadow-neon {
+    filter: drop-shadow(0 0 4px currentColor);
+  }
+}
+
+/* Responsive улучшения */
+html, body, #root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
